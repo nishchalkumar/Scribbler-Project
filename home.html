@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home Page</title>
+        <link rel="stylesheet" href="css/home.css">
+        
+    </head>
+<body>
+
+    <script src="./home.js"></script>
+    <header>
+           
+    <div class="overlay1" id="modal" >
+           <div class="create1">
+                <div class="createpost1">
+                <h3 id="create_head">Pen Your Post<span class="close_create" onclick="toogleshowModal()">&times;</span></h3>
+                <div class="createpost">
+                   <form action="#" class="form1">
+                   <label class="create_title">Title</label>
+                   <input type="text" placeholder="Enter title of your post" class="create_t" required> 
+                   <label class="create_title">Contents</label>
+                   <textarea id="content_create" placeholder="Enter the contents of your post" required></textarea>
+                   
+                
+            </div>
+        </div>  
+                <div class="createbutton">
+                    <button id="create_button">Create</button>
+                </div>
+            </form>
+               
+           </div>
+       </div>
+
+
+       <div class="sign_modal" id="modal2">
+        <div class="sign_login">
+        <div class="header_sign">
+            <h3 class="head_sign" id="head_sign_id">Welcome Back!<span id="sign_close" onclick="toogleshowModalSign()" class="span_sign">&times;</span></h3>
+        <div class="sign_form">
+            <form action="#" class="sign_form">
+                <label for="username" class="sign_label">Username</label>
+                <input type="text" class="sign_input" id="user_sign" placeholder="Enter your username" name="username" required>
+                <label for="pwd" class="sign_label" id="label_sign">Password</label>
+                <input type="password" class="sign_input" id="password_sign" placeholder="Enter your password" name="pwd" required>
+            
+        </div>
+    </div>
+    <div class="sign_button">
+        <button class="sign_btn" id="btn_sign" type="submit" >Sign In</button>
+    </div>
+</form>
+    <div class="sign_not">
+        <p class="sign_p">Not a Member? <span class="sign_span" onclick="toogleSignUp()">Sign Up</span></p>
+    </div>
+    </div>
+</div>
+
+<div class="sign_up_modal" id="modal3">
+    <div class="sign_up_login">
+    <div class="header_sign_up">
+        <h3 class="head_sign_up" id="head_sign_up_id">Get Started<span id="sign_up_close" onclick="toogleSignUp()" class="span_sign_up">&times;</span></h3>
+    <div class="sign_up_form">
+        <form  class="sign_up_form">
+            <label class="sign_up_label" >Name</label>
+            <input type="text" class="sign_up_input" id="label_sign_up" placeholder="Enter your name" name="name" required>
+            <label class="sign_up_label" id="label_sign_up">Username</label>
+            <input type="text" class="sign_up_input" id="label_sign_up" placeholder="Enter your username" required>
+            <label class="sign_up_label" id="label_sign_up">Password</label>
+            <input type="password" class="sign_up_input" id="password_sign_up" placeholder="Enter your password"required>
+            <label class="sign_up_label" id="label_sign_up">Confirm Password</label>
+            <input type="password" class="sign_up_input" id="password_sign_up" placeholder="Re-enter your username" required>
+       
+    </div>
+</div>
+<div class="sign_up_button">
+    <button class="sign_up_btn" id="btn_sign_up" type="submit" >Sign Up</button>
+</div>
+</form>
+</div>
+</div>
+    <div class="main">
+        <button class="btn_sign" id="sign_up" onclick="toogleSignUp()">Sign Up</button>
+        <button class="btn_sign" id="sign_in" onclick="toogleshowModalSign()">Sign In</button>
+
+        <a class="logo-title">ScriBBler</a>
+        <p class="middleText">Explore, Imagine, Create</p>
+        <div class="btn_2">
+            <a href="bloglist.html"><button class="button_2">All Posts</button></a>
+            <button class="button_2" id="open_create" onclick="toogleshowModal()">Create Post</button>
+
+        </div>
+    </div>
+
+
+</header>
+
+ </body>
+</html>

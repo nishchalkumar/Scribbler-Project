@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    font-family: "Roboto",sans-serif;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.btn_sign{
+    background-color: blue;
+    color: white;
+    padding: 0.5%;
+    border: 0px;
+    width: 100px;
+    float: right;
+    margin-top: 10px;
+}
+#sign_up{
+    margin-right: 10px;
+}
+
+#sign_in{
+    margin-right: 10px;
+}
+.logo-title{
+    font-family: 'Montez', cursive;
+    font-size: 30px;
+    color: blue;
+    margin-left: 10px;
+}
+.middleText{
+    font-family: bold;
+    color:black;
+    margin-left: 10px;
+}
+.btn_2{
+    padding: 10px;
+    margin-top: 15%;
+    margin-left: 40%;
+
+}
+.button_2{
+    background-color: rgb(231, 243, 70);
+    padding: 10px;
+    width: 130px;
+    color: black;
+}
+header{
+    background-image: url(../home.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* CREATE POST*/
+
+
+#modal{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0,0, 0.2);
+    z-index: 100;
+}
+#modal.open{
+    display: flex;
+    animation: show-overlay 0.5s;
+}
+@keyframes show-overlay{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#content_create{
+
+    margin-left: 30px;
+    width: 480%;
+    height: 300px;
+    margin-top: 10px;
+    background-color: rgb(243, 243, 243);
+
+}
+
+
+.createpost{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 850px;
+}
+#create_head{
+    margin-top: 20px;
+    margin-left: 25px;
+    border-bottom: 1.5px solid gray ;
+    color: gray;
+    width: 96%;
+padding-bottom: 10px;
+
+}
+.close_create{
+    color: gray;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+.create_title{
+    margin-left: 30px;
+}
+#create_button{
+    margin-top: 10px;
+    margin-left: 500px;
+    padding: 5px;
+    width: 10%;
+    background-color: rgb(36, 180, 36);
+    color: #fff;
+}
+.form1{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.create1{
+    height: 550px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+     background-color: #fff;
+ }
+
+.create_t {
+    background-color: rgb(241, 240, 240);
+    padding: 1%;
+    width: 480%;
+    
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+h3{
+    margin-top: 20px;
+}
+
+/* SIGN IN */
+
+   
+#modal2{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0,0, 0.2);
+    z-index: 100;
+}
+#modal2.open{
+    display: flex;
+    animation: show-overlay 0.5s;
+}
+@keyframes show-overlay{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.sign_form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.sign_input{
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(243, 243, 243);
+}
+#label_sign{
+    margin-top: 5px;
+}
+#btn_sign{
+  background-color:  rgb(36, 180, 36);
+  width: 91%;
+  margin-left: 15px;
+  padding: 2%;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 15px;
+}
+.sign_login{
+    background-color: #fff;
+    height: 350px;
+    width: 350px;
+}
+.header_sign{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.head_sign{
+    border-bottom: 1.5px solid gray ;
+    color: gray;
+    width: 100%;
+    padding-bottom: 10px;
+}
+#head_sign_id{
+    font-size: 20px;
+}
+#sign_close{
+    color: gray;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+.sign_span{
+    color: blue;
+    cursor: pointer;
+
+}
+
+.sign_not{
+    margin-top: 20px;
+    margin-left: 85px;
+}
+/* SIGN UP */
+
+   
+#modal3{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0,0, 0.2);
+    z-index: 100;
+}
+#modal3.open{
+    display: flex;
+    animation: show-overlay 0.5s;
+}
+@keyframes show-overlay{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.sign_up_form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.sign_up_input{
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(243, 243, 243);
+}
+#label_sign_up{
+    margin-top: 5px;
+}
+#btn_sign_up{
+  background-color:  rgb(36, 180, 36);
+  width: 91%;
+  margin-left: 15px;
+  padding: 2%;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 15px;
+}
+.sign_up_login{
+    background-color: #fff;
+    height: 400px;
+    width: 350px;
+}
+.header_sign_up{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.head_sign_up{
+    border-bottom: 1.5px solid gray ;
+    color: gray;
+    width: 100%;
+    padding-bottom: 10px;
+}
+#head_sign_up_id{
+    font-size: 20px;
+}
+#sign_up_close{
+    color: gray;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+.sign_up_span{
+    color: blue;
+
+}
+
+
+/*ALL POSTS*/
+
+.flex_posts{
+    display: flex;
+    flex-direction: column;
+}
