@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    font-family: "Roboto",sans-serif;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.btn_sign{
+    background-color: blue;
+    color: white;
+    padding: 0.5%;
+    border: 0px;
+    width: 100px;
+    float: right;
+    margin-top: 10px;
+}
+#sign_up{
+    margin-right: 10px;
+}
+
+#sign_in{
+    margin-right: 10px;
+}
+.logo-title{
+    font-family: 'Montez', cursive;
+    font-size: 30px;
+    color: blue;
+    margin-left: 10px;
+}
+.middleText{
+    font-family: bold;
+    color:black;
+    margin-left: 10px;
+}
+
+header{
+    background-color: rgb(250, 217, 222);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.post {
+    position: relative;
+    display:  inline-table;
+    width: 40%;
+    height: 20%;
+    background: #fff;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: 10px 10px 10px 20px;
+    float:left;
+    border-radius: 15px;
+     }
+    
+    .post:hover {
+    box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
+} 
+.post-left {
+        width: 15%;            
+        max-width: 15%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+}
+.post-content {
+        width: 75%;           
+        display: table-cell;
+        text-align: left;
+        background-color: #E8E8E8;
+        color: #000000;
+        border-radius: 0 15px 15px 0;
+        padding: 0 20px;
+              
+        
+}
+.post-title{
+    font-weight: bold;
+    color: #2b312b;
+    margin-top: 10px;
+    overflow: hidden;
+    display: block;
+    height: 25px;
+    }
+.post-more {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.post-desc{
+    height: 55px;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+}
+
+body {
+height: 100%;
+width: 100%;
+position: relative;
+display: block;
+margin: 0 !important;
+color: #fff;
+background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+background-size: 2000% 2000%;
+-webkit-animation: Gradient 15s ease infinite;
+-moz-animation: Gradient 15s ease infinite;
+animation: Gradient 15s ease infinite;
+
+}
+.allPostsContainer {
+height: 100%;
+width: 100%;
+position: absolute;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+.deletePost {
+    padding-top: 5px; 
+    padding-right: 5px; 
+    position: relative;
+    float: right;        
+    color: #000;
+    font-family: 'Abel', sans-serif;
+    width: 10%;
+    margin-top: 5px;
+    background-color: #E8E8E8;
+    }
+
+    .deletePost:hover,
+    .deletePost:focus {
+        color: #f44336;
+        cursor: pointer;
+        
+    } 
+    .deletePrompt {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        padding-top: 25px;
+        opacity: 1;
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+    
+    .deleteContent{
+        background-color: #fefefe;
+        margin: 15% auto auto auto;
+        border: 1px solid #fff;
+        width: 30%; 
+        padding: 20px 20px 20px 20px;
+        opacity: 1;
+        overflow: hidden;
+        color: #000;
+        }
+      .deleteContainer{
+          font-size:18px;
+          letter-spacing: 0.5;
+      }
+      
+      .deleteButton{
+          float: left;
+          width: 20%;
+          padding: 1%;
+          margin-top: 10px;
+          background-color: green;
+      }
+      .CancelDeleteButton{
+        float: right;
+        margin-top: 10px;
+        width: 20%;
+        padding: 1%;
+        background-color: red;
+    }
+
+
+    #modal2{
+        position: fixed;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0,0, 0.2);
+        z-index: 100;
+    }
+    #modal2.open{
+        display: flex;
+        animation: show-overlay 0.5s;
+    }
+    @keyframes show-overlay{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .sign_form{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .sign_input{
+        padding: 5px;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(243, 243, 243);
+    }
+    #label_sign{
+        margin-top: 5px;
+        
+    }
+    .sign_label{
+        color: black;
+    }
+    .sign_p{
+        color: black;
+    }
+    #btn_sign{
+      background-color:  rgb(36, 180, 36);
+      width: 91%;
+      margin-left: 15px;
+      padding: 2%;
+      margin-top: 20px;
+      color: #fff;
+      font-size: 15px;
+    }
+    .sign_login{
+        background-color: #fff;
+        height: 350px;
+        width: 350px;
+    }
+    .header_sign{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+    
+    .head_sign{
+        border-bottom: 1.5px solid gray ;
+        color: gray;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    #head_sign_id{
+        font-size: 20px;
+    }
+    #sign_close{
+        color: gray;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 10px;
+        
+    }
+    .sign_span{
+        color: blue;
+        cursor: pointer;
+    
+    }
+    
+    .sign_not{
+        margin-top: 20px;
+        margin-left: 85px;
+    }
+    /* SIGN UP */
+    
+       
+    #modal3{
+        position: fixed;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0,0, 0.2);
+        z-index: 100;
+    }
+    #modal3.open{
+        display: flex;
+        animation: show-overlay 0.5s;
+    }
+    @keyframes show-overlay{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .sign_up_form{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .sign_up_input{
+        padding: 5px;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgb(243, 243, 243);
+    }
+    .sign_up_label{
+        color: black;
+    }
+    #label_sign_up{
+        margin-top: 5px;
+        color: black;
+    }
+    #btn_sign_up{
+      background-color:  rgb(36, 180, 36);
+      width: 91%;
+      margin-left: 15px;
+      padding: 2%;
+      margin-top: 20px;
+      color: #fff;
+      font-size: 15px;
+    }
+    .sign_up_login{
+        background-color: #fff;
+        height: 400px;
+        width: 350px;
+    }
+    .header_sign_up{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+    
+    .head_sign_up{
+        border-bottom: 1.5px solid gray ;
+        color: gray;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    #head_sign_up_id{
+        font-size: 20px;
+    }
+    #sign_up_close{
+        color: gray;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 10px;
+        
+    }
+    .sign_up_span{
+        color: blue;
+    
+    }
+    
